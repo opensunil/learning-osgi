@@ -1,0 +1,15 @@
+<ipojo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="org.apache.felix.ipojo http://felix.apache.org/ipojo/schemas/CURRENT/core.xsd"
+	xmlns="org.apache.felix.ipojo">
+	<!--
+		Declare your component types and instances here
+	-->
+
+	
+	<component classname="org.sunilbrown.osgi.HelloComponent">
+
+	</component>
+	<instance component="org.sunilbrown.osgi.HelloComponent" />
+
+	
+</ipojo>
