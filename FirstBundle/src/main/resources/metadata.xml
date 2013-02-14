@@ -6,10 +6,10 @@
 	-->
 
 	
-	<component classname="org.sunilbrown.osgi.HelloComponent">
-
+	<component classname="org.sunilbrown.osgi.HelloComponent" name="HelloProvider">
+	  <provides/>
 	</component>
-	<instance component="org.sunilbrown.osgi.HelloComponent" />
+	<instance component="HelloProvider" name="HelloService"/>
 
 	
 </ipojo>
