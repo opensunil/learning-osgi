@@ -56,7 +56,7 @@ limitations under the License.
 	    <Bundle-Version>${project.version}</Bundle-Version>
 	    <Bundle-Activator>org.sunilbrown.osgi.example2.Activator</Bundle-Activator>
 	    <Export-Package>
-	      org.sunilbrown.osgi.example2.service*;version=${project.version}
+	      org.sunilbrown.osgi.example2.service;version=${project.version}
 	    </Export-Package>
 	    <Import-Package>
 	      org.osgi.framework

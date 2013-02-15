@@ -12,6 +12,7 @@
     <module>Activator</module>
     <module>example2</module>
     <module>example2b</module>
+    <module>example3</module>
   </modules>
   <dependencies>
     <dependency>
