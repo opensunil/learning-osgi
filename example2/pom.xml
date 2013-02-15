@@ -56,10 +56,10 @@ limitations under the License.
 	    <Bundle-Version>${project.version}</Bundle-Version>
 	    <Bundle-Activator>org.sunilbrown.osgi.Activator</Bundle-Activator>
 	    <Export-Package>
-	      org.sunilbrown.osgi*;version=${project.version}
+	      org.sunilbrown.osgi.service*;version=${project.version}
 	    </Export-Package>
 	    <Import-Package>
-	      *
+	      org.osgi.framework
 	    </Import-Package>
 	  </instructions>
 	</configuration>
