@@ -4,7 +4,26 @@ learning-osgi
 a) Understand core concepts
    1. Maven 
       1) archetype:generate option 238 [org.apache.karaf.archetypes:karaf-bundle-archetype (A simple bundle archetype.)]
-      2) karaf hot deploy
+      2) property lookup plugin in subprojects
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>properties-maven-plugin</artifactId>
+        <version>1.0-alpha-2</version>
+        <executions>
+          <execution>
+            <phase>initialize</phase>
+            <goals>
+              <goal>read-project-properties</goal>
+            </goals>
+            <configuration>
+              <files>
+                <file>${basedir}/../application.properties</file>
+              </files>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      3) karaf hot deploy
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
