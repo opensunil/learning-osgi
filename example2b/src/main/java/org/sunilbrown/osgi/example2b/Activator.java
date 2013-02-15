@@ -13,21 +13,22 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package org.sunilbrown.osgi;
+package org.sunilbrown.osgi.example2b;
 
 import java.util.Hashtable;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import org.sunilbrown.osgi.service.DictionaryService;
+import org.sunilbrown.osgi.example2.service.DictionaryService;
 
 /**
  * This class implements a simple bundle that uses the bundle
- * context to register an English language dictionary service
+ * context to register an French language dictionary service
  * with the OSGi framework. The dictionary service interface is
  * defined in a separate class file and is implemented by an
- * inner class.
+ * inner class. This class is identical to the class in
+ * Example 2, except that the dictionary contains French words.
 **/
 public class Activator implements BundleActivator
 {
@@ -41,7 +42,7 @@ public class Activator implements BundleActivator
     public void start(BundleContext context)
     {
         Hashtable<String, String> props = new Hashtable<String, String>();
-        props.put("Language", "English");
+        props.put("Language", "French");
         context.registerService(
             DictionaryService.class.getName(), new DictionaryImpl(), props);
     }
@@ -64,7 +65,7 @@ public class Activator implements BundleActivator
     {
         // The set of words contained in the dictionary.
         String[] m_dictionary =
-            { "welcome", "to", "the", "osgi", "tutorial" };
+            { "bienvenue", "au", "tutoriel", "osgi" };
 
         /**
          * Implements DictionaryService.checkWord(). Determines

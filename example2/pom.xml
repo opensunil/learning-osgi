@@ -26,7 +26,7 @@ limitations under the License.
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.sunilbrown.osgi</groupId>
+  <groupId>org.sunilbrown.osgi.example2</groupId>
   <artifactId>example2</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
@@ -54,9 +54,9 @@ limitations under the License.
 	  <instructions>
 	    <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 	    <Bundle-Version>${project.version}</Bundle-Version>
-	    <Bundle-Activator>org.sunilbrown.osgi.Activator</Bundle-Activator>
+	    <Bundle-Activator>org.sunilbrown.osgi.example2.Activator</Bundle-Activator>
 	    <Export-Package>
-	      org.sunilbrown.osgi.service*;version=${project.version}
+	      org.sunilbrown.osgi.example2.service*;version=${project.version}
 	    </Export-Package>
 	    <Import-Package>
 	      org.osgi.framework

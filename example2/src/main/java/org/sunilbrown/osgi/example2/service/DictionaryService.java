@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.sunilbrown.osgi.service;
+package org.sunilbrown.osgi.example2.service;
 
 /**
  * @author sunil

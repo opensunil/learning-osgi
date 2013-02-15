@@ -11,6 +11,7 @@
     <module>SimpleBundle</module>
     <module>Activator</module>
     <module>example2</module>
+    <module>example2b</module>
   </modules>
   <dependencies>
     <dependency>
