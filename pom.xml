@@ -7,16 +7,13 @@
   <packaging>pom</packaging>
   <name>learning-osgi</name>
   <modules>
-    <module>FirstBundle</module>
-    <module>SimpleBundle</module>
-    <module>Activator</module>
+    <module>example1</module>
     <module>example2</module>
     <module>example2b</module>
     <module>example3</module>
     <module>example4</module>
     <module>example5</module>
     <module>example6</module>
-    <module>example1</module>
   </modules>
   <dependencies>
     <dependency>
