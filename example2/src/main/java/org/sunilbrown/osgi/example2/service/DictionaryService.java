@@ -4,8 +4,6 @@
 package org.sunilbrown.osgi.example2.service;
 
 /**
- * @author sunil
- *	
  *	A simple service interface that defines a dictionary service.
  *  A dictionary service simply verifies the existence of a word.
  */
