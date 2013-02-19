@@ -1,0 +1,7 @@
+Prerequisites
+1) Download service binder jar
+	For ex: http://oscar-osgi.sourceforge.net/tutorial/ex7.html
+2) Convert to osgi bundle
+	For ex: mvn install:install-file -Dfile=servicebinder.jar -DgroupId=org.ungoverned.gravity.servicebinder -DartifactId=servicebinder -Dversion=1.50.0 -Dpackaging=jar
+3) Deploy bundle to osgi container
+	For ex: copy to ${KARAF_HOME}/deploy
