@@ -19,8 +19,11 @@ public class MyCSVRouteBuilder extends RouteBuilder {
 		//from("file:src/test/csv/daltons.csv&noop=true").
 		//unmarshal().csv().
 		//to("mock:daltons");
-		from("file:src/main/data/inbound/csv/daltons.csv&noop=true").
-		unmarshal().csv();
+		from("file:src/main/data/inbound/csv?noop=true").
+		unmarshal().csv().
+		to("file:src/main/data/outbound/csv");
+		
+		//unmarshal().csv();
 	}
 
 }
